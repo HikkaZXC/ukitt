@@ -1,0 +1,209 @@
+/* форматирование */
+
+*, *:before, *:after {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+
+/* первый блок */
+
+.header {
+    width: 700px; /*высота*/
+    margin: 0px auto; /*внешний отступ*/
+    text-align: justify; /*расположение текста относительно блока*/
+    border: 1px solid black; /*рамка блока*/
+}
+.header nav ul li{
+    display: flex; /*упрощает управдение блоками*/
+    margin-bottom: 20px; /*нижний отступ относительно блока*/
+    background-color: #484848; /*задний фон блока*/
+}
+.header nav a {
+    padding: 10px 25px; /*внутренние отступы относительно блока*/
+    text-decoration: none; /*форматирование текста, в данном случае убирает все стили*/
+    color: #fff; /*цвет текста*/
+    font: bold 14px Arial; /*шрифт текст*/
+}
+.header nav a:hover, .header nav a.active { /*hover отвечает за действия при наведении на ссылку, а класс active просто делает ссылку постоянно активной*/
+    color: #484848; 
+    background-color: #fff;
+}
+.header main section h1 {
+    text-align: center; /*текст по центру*/
+    margin-bottom: 10px;
+}
+.header main section p {
+    padding: 0 40px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif; /*шрифт*/
+}
+.header main section a {
+    color: blue; 
+    text-decoration: none;
+    font-weight: bold; /*жирность текста*/
+}
+.header main section a:hover {
+    color: green;
+    text-decoration: underline; /*делает ссылку подчеркнутой, так как мы сделали форматирование и всё ссылки без стилей*/
+}
+
+/* второй блок */
+
+.header1 {
+    width: 700px;
+    margin: 50px auto;
+    text-align: justify;
+    border: 1px solid orange;
+}
+.header1 nav ul li{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: orange;
+}
+.header1 nav a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 14px Arial; /*можно и так шрифт ставить указывая сразу все хар-ки*/
+}
+.header1 nav a:hover, .header1 nav a.active {
+    color: orange;
+    background-color: #fff;
+}
+.header1 main section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(136, 89, 1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header1 main section p {
+    padding: 0 40px;
+    text-indent: 25px; /*это "красная строка" чтобы был отступ в начале абзаца*/
+    margin-bottom: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(202, 131, 0);
+}
+.header1 main section a {
+    color: rgb(202, 131, 0);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.header1 main section a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* третий блок */
+
+.main {
+    width: 700px;
+    margin: 50px auto;
+    text-align: justify;
+}
+.main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main .block {
+    width: 700px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.main .block p.ablock a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .block p.ablock a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.main .block p.AAA {
+    text-align: right;
+    padding-right: 20px;
+}
+.main .block p.AAA a {
+    text-decoration: none;
+    color: blue;
+}
+.main .block p.AAA a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.main .block p {
+    text-align: justify;
+    margin: 10px 0;
+}
+.main .block1 {
+    width: 700px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.main .block1 p.ablock a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .block1 p.ablock a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.main .block1 p.AAA {
+    text-align: right;
+    padding-right: 20px;
+}
+.main .block1 p.AAA a {
+    text-decoration: none;
+    color: blue;
+}
+.main .block1 p.AAA a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.main .block1 p {
+    text-align: justify;
+    margin: 10px 0;
+}
+.main .block2 {
+    width: 700px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.main .block2 p.ablock a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .block2 p.ablock a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.main .block2 p.AAA {
+    text-align: right;
+    padding-right: 20px;
+}
+.main .block2 p.AAA a {
+    text-decoration: none;
+    color: blue;
+}
+.main .block2 p.AAA a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.main .block2 p {
+    text-align: justify;
+    margin: 10px 0;
+}

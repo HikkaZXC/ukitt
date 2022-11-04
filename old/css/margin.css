@@ -1,0 +1,419 @@
+* {
+    background-color: rgb(207, 207, 207);
+}
+p {
+    background-color: green;
+}
+
+
+#elem1 {
+    width: 400px;
+    border: 1px dashed blue;
+}
+
+#elem2 {
+    margin: 50px;
+    height: 300px;
+    border: 1px solid orange;
+}
+
+#elem3 {
+    width: 400px;
+    border: 1px dashed blue;
+}
+
+#elem4 {
+    margin: 25px;
+    border: 1px dashed green;
+}
+
+#elem5 {
+    height: 200px;
+    margin: 25px;
+    border: 1px solid red;
+}
+
+#parent {
+    width: 200px;
+    border: 1px solid red;
+}
+
+#child {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+#parent1 {
+    width: 200px;
+    border: 1px solid red;
+}
+
+#child1 {
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+#parent2 {
+    width: 200px;
+    border: 1px solid red;
+}
+
+#child2 {
+    margin-top: 20px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+#parent3 {
+    width: 200px;
+    border: 1px solid orange;
+}
+
+#child3 {
+    margin: 25px 50px 100px 10px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#parent4 {
+    width: 200px;
+    border: 1px solid orange;
+}
+
+#child4 {
+    margin: 100px 50px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#parent5 {
+    width: 200px;
+    border: 1px solid orange;
+}
+
+#child5 {
+    margin: 25px 50px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#parent6 {
+    width: 200px;
+    border: 1px solid orange;
+}
+
+#child6 {
+    margin: 100px 50px 30px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#parent7 {
+    width: 400px;
+    border: 1px solid orange;
+}
+
+#child7 {
+    margin: 30px 100px 50px;
+    height: 50px;
+    border: 1px dashed blue;
+}
+
+#elem6 {
+    padding: 50px;
+    width: 200px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+#elem7 {
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid green;
+    text-align: justify;
+}
+
+#elem8 {
+    width: 300px;
+    padding: 10px;
+    margin-left: 50px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+#elem9 {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    width: 200px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+#elem10 {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 10px 20px 30px 40px;
+}
+
+#elem11 {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 60px 30px;
+}
+
+#elem12 {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 10px 20px 40px;
+}
+
+#elem13 {
+	width: 100px;
+	height: 100px;
+	background: #f1f1f1;
+	margin-bottom: 20px;
+}
+
+#elem14 {
+	width: 100px;
+	height: 100px;
+	background: #f1f1f1;
+	padding: 25px; /* задаем отступы */
+	border: 10px solid green;  /* задаем границу */
+	box-sizing: border-box;  /* убираем расширение */
+}
+
+#elem15 {
+    display: inline;
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+}
+
+span {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+	margin-bottom: 20px;
+}
+
+#elem16 {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	border: 1px solid red;
+	display: inline-block;
+}
+
+#parent8 {
+    border: 1px solid red;
+}
+
+#elem17 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#elem18 {
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+#elem19 {
+    height: 100px;
+    width: 300px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+.parent9 {
+	padding: 10px 0;
+	border: 1px solid red;
+    text-align: center;
+}
+
+.parent10 {
+	padding: 10px 10px;
+	border: 1px solid red;
+    text-align: right;
+}
+
+.parent11 {
+	width: 100px;
+	border: 1px solid red;
+	display: inline-block;
+    margin: 5px auto;
+    
+}
+
+.child8 {
+	padding: 10px;
+	border: 1px solid green;
+}
+
+.parent12 {
+	padding: 10px 0;
+	border: 1px solid red;
+    margin-right: 50px;
+}
+
+.child9 {
+	padding: 10px;
+	border: 1px solid green;
+	margin-left: auto;
+	margin-right: 20px; 
+	height: 100px;
+	width: 200px;
+}
+
+.parent13 {
+	padding: 10px 0;
+	border: 1px solid red;
+}
+
+.child10 {
+	width: 100px;
+	padding: 10px;
+	border: 1px solid green;
+}
+
+.parent14 {
+    display: flex;
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.child11 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent15 {
+    display: flex;
+    width: 900px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.child12 {
+    width: 120px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+.parent16 {
+    display: flex;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.child13 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent17 {
+    display: flex;
+    border: 1px solid red;
+}
+
+.child14 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent18 {
+    display: flex;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.child15 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent19 {
+    display: flex;
+    border: 1px solid red;
+}
+
+.child16 {
+    margin: 30px;
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent20 {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.child17 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent21 {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.child18 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.parent22 {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.child19 {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}

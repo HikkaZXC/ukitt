@@ -1,0 +1,252 @@
+/* .div {
+    position: static;
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+} */
+
+
+#elem1, #elem2, #elem3 {
+    margin: 1px;
+    margin-left: 1px;
+}
+
+#elem4, #elem5, #elem6 {
+    margin: 200px;
+    margin-left: 1px;
+}
+#elem7, #elem8, #elem9 {
+    margin: 260px;
+    margin-left: 1px;
+}
+#elem10, #elem11, #elem12 {
+    margin: 350px;
+    margin-left: 95px;
+}
+#elem13, #elem14, #elem15 {
+    margin: 450px;
+    margin-left: 1px;
+}
+
+#elem16, #elem17, #elem18 {
+    margin: 50px;
+    margin-left: 1px;
+}
+
+#elem1 {
+    border: 1px solid red;
+    left: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem2 {
+    border: 1px solid blue;
+    left: 100px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem3 {
+    border: 1px solid green;
+    left: 170px;
+    top: 170px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem4 {
+    border: 1px solid red;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+}
+
+#elem5 {
+    border: 1px solid blue;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+}
+
+#elem6 {
+    border: 1px solid green;
+    left: 170px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+}
+
+#elem7 {
+    border: 1px solid red;
+    left: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem8 {
+    border: 1px solid blue;
+    left: 60px;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem9   {
+    border: 1px solid green;
+    left: 90px;
+    top: 90px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem10 {
+    background-color: #FF8888;
+    left: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem11 {
+    background-color: #7E89EB;
+    left: 60px;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#elem12 {
+    background-color: #4DEE99;
+    left: 90px;
+    top: 90px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+#elem13 {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #FF8888;
+}
+
+#elem14 {
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #7E89EB;
+}
+
+#elem15{
+    position: absolute;
+    left: 160px;
+    top: 240px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #4DEE99;
+}
+
+#elem19 {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+#elem20 {
+    border: 1px solid red;
+    position: absolute;
+    left: 800px;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+}
+#elem21{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #4DEE99;
+}
+
+#elem22 {
+    background-color: black;
+    position: absolute;
+    right: 350px;
+    bottom: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+#elem23 {
+    background-color: #fff;
+    position: absolute;
+    left: 350px;
+    top: 500px;
+    width: 100px;
+    height: 100px;
+
+}
+
+#elem24 {
+    position: relative;
+    width: 200px;
+    height: 430px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+#elem25 {
+    border: 1px solid black;
+    background-color: red;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#elem26 {
+    background-color: yellow;
+    border: 1px solid black;
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#elem27 {
+    border: 1px solid black;
+    background-color: green;
+    position: absolute;
+    left: 50px;
+    top: 270px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
