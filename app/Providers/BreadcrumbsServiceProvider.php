@@ -72,7 +72,7 @@ class BreadcrumbsServiceProvider extends ServiceProvider
                 'url' => route('post.index')
             ];
             $breadcrumbs[] = [
-                'title' => 'Редактирование: Post ' . $post->id,
+                'title' => 'Редактирование: ' . $post->title,
                 'url' => route('post.edit', $post),
                 'active' => true
             ];

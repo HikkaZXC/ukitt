@@ -1116,3 +1116,328 @@ body {
 .scrollable-content::-webkit-scrollbar-track {
     background-color: var(--card-bg);
 }
+
+/* Summernote Dark Theme */
+.note-editor.note-frame {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.note-editor.note-frame .note-editing-area .note-placeholder {
+    color: var(--text-secondary);
+}
+
+.note-editor.note-frame .note-toolbar {
+    background-color: var(--card-bg);
+    border-bottom-color: var(--border-color);
+}
+
+.note-editor.note-frame .note-statusbar {
+    background-color: var(--card-bg);
+    border-top-color: var(--border-color);
+}
+
+.note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar {
+    border-top-color: var(--text-secondary);
+}
+
+.note-editor.note-frame .note-toolbar .note-btn-group .note-btn {
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.note-editor.note-frame .note-toolbar .note-btn-group .note-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.note-editor.note-frame .note-toolbar .note-btn-group .note-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.note-dropdown-menu {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.note-dropdown-item {
+    color: var(--text-color);
+}
+
+.note-dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.note-modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+.note-modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.note-modal-title {
+    color: var(--text-color);
+}
+
+.note-modal-footer {
+    border-top-color: var(--border-color);
+}
+
+.note-form-label {
+    color: var(--text-color);
+}
+
+.note-input {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.note-input:focus {
+    border-color: var(--primary-color);
+}
+
+.note-popover .popover-content, .note-editor .note-toolbar {
+    background-color: var(--card-bg);
+}
+
+.note-dropdown-menu .note-dropdown-item a i {
+    color: var(--text-color);
+}
+
+.note-color-palette .note-color-btn {
+    border-color: var(--border-color);
+}
+
+.note-editable table {
+    border-color: var(--border-color);
+}
+
+.note-editable table td, 
+.note-editable table th {
+    border-color: var(--border-color);
+}
+
+.note-modal-footer .note-btn {
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.note-modal-footer .note-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.note-modal-footer .note-btn.primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.note-modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.note-check .note-check-li {
+    color: var(--text-color);
+}
+
+.note-color-palette {
+    background-color: var(--card-bg);
+}
+
+.note-color-palette .note-color-row {
+    border-color: var(--border-color);
+}
+
+.note-color-palette .note-color-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.note-para .note-dropdown-menu {
+    min-width: 216px;
+}
+
+.note-hint-popover .popover-content .note-hint-group .note-hint-item {
+    color: var(--text-color);
+    background-color: var(--card-bg);
+}
+
+.note-hint-popover .popover-content .note-hint-group .note-hint-item.active, 
+.note-hint-popover .popover-content .note-hint-group .note-hint-item:hover {
+    background-color: var(--primary-color);
+}
+
+/* Summernote Icon Colors */
+.note-editor .note-toolbar button.note-btn i,
+.note-editor .note-toolbar .note-icon-caret {
+    color: var(--text-color);
+}
+
+.note-editor.note-frame .note-toolbar .note-btn-group .note-btn:hover i {
+    color: var(--text-color);
+}
+
+/* Code View */
+.note-editor .note-codable {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+/* Tables in Editor */
+.note-editor .note-editing-area .note-editable table {
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+}
+
+.note-editor .note-editing-area .note-editable table td,
+.note-editor .note-editing-area .note-editable table th {
+    border: 1px solid var(--border-color);
+    padding: 5px;
+}
+
+/* Dropdown Items in Toolbar */
+.note-editor .note-toolbar .note-dropdown-menu {
+    min-width: 160px;
+}
+
+.note-editor .note-toolbar .note-dropdown-menu .note-dropdown-item {
+    padding: 5px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.note-editor .note-toolbar .note-dropdown-menu .note-dropdown-item:hover {
+    background-color: var(--primary-color);
+}
+
+/* Fix for Link Dialog */
+.note-modal .note-form-group input[type="text"],
+.note-modal .note-form-group input[type="url"],
+.note-modal .note-form-group textarea {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.note-modal .note-form-group input[type="text"]:focus,
+.note-modal .note-form-group input[type="url"]:focus,
+.note-modal .note-form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* Focus for Editable Area */
+.note-editor.note-frame .note-editing-area .note-editable:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Dark Theme Specific Overrides */
+.note-editor.dark-theme {
+    color-scheme: dark;
+}
+
+.note-editor.dark-theme .note-editable {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.note-editor.dark-theme .note-editable a {
+    color: var(--primary-color);
+}
+
+.note-editor.dark-theme .note-editable h1,
+.note-editor.dark-theme .note-editable h2,
+.note-editor.dark-theme .note-editable h3,
+.note-editor.dark-theme .note-editable h4,
+.note-editor.dark-theme .note-editable h5,
+.note-editor.dark-theme .note-editable h6 {
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.note-editor.dark-theme .note-editable blockquote {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 10px;
+    color: var(--text-secondary);
+}
+
+.note-editor.dark-theme .note-editable pre {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.note-editor.dark-theme .note-editable code {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--primary-color);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Фиксы для темных иконок */
+.note-editor.dark-theme .note-icon-font.note-recent-color {
+    background-color: transparent !important;
+}
+
+.note-editor.dark-theme .note-dropdown-menu .note-btn.note-checked {
+    background-color: var(--primary-color);
+}
+
+.note-editor.dark-theme .note-dropdown-menu .note-btn.note-checked i {
+    color: var(--text-color);
+}
+
+/* Summernote Image Upload Styles for Dark Theme */
+.note-image-dialog.modal .note-image-form {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.note-image-dialog.modal .note-group-select-from-files {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.note-image-dialog.modal .note-image-url {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.note-image-dialog.modal .note-image-url:focus {
+    border-color: var(--primary-color);
+}
+
+.note-image-dialog.modal .note-image-btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.note-image-dialog.modal .close {
+    color: var(--text-color);
+    text-shadow: none;
+    opacity: 0.7;
+}
+
+.note-image-dialog.modal .close:hover {
+    opacity: 1;
+}

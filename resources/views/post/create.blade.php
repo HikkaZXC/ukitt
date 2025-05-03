@@ -21,24 +21,48 @@
 @endif
 
 <div class="post-form-container">
-    <form action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data" class="post-form">
+    <form action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data" class="post-form needs-validation" novalidate>
         @csrf
         <div class="form-group">
             <label for="title" class="form-label">Заголовок</label>
-            <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}" required>
+            <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" value="{{ old('title') }}" required>
+            <div class="invalid-feedback">
+                Пожалуйста, введите заголовок новости.
+            </div>
+            @error('title')
+                <div class="invalid-feedback d-block">
+                    {{ $message }}
+                </div>
+            @enderror
             <div class="form-text">Введите заголовок новости (до 255 символов)</div>
         </div>
         
         <div class="form-group">
             <label for="content" class="form-label">Содержание</label>
-            <textarea class="form-control summernote" id="content" name="content" required>{{ old('content') }}</textarea>
+            <textarea class="form-control summernote @error('content') is-invalid @enderror" id="content" name="content" required>{{ old('content') }}</textarea>
+            <div class="invalid-feedback">
+                Пожалуйста, введите содержание новости.
+            </div>
+            @error('content')
+                <div class="invalid-feedback d-block">
+                    {{ $message }}
+                </div>
+            @enderror
             <div class="form-text">Введите подробное содержание новости</div>
         </div>
         
         <div class="form-group">
             <label for="image" class="form-label">Изображение</label>
             <div class="file-input-wrapper">
-                <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+                <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" name="image" accept="image/*" required>
+                <div class="invalid-feedback">
+                    Пожалуйста, загрузите изображение для новости.
+                </div>
+                @error('image')
+                    <div class="invalid-feedback d-block">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div id="image-preview" class="mt-3 d-none">
                 <img src="" alt="Предпросмотр" class="preview-image">
@@ -235,6 +259,27 @@
             padding: 1.5rem;
         }
     }
+    
+    /* Стили для валидации */
+    .form-control.is-invalid {
+        border-color: var(--error-color);
+        background-image: none;
+    }
+    
+    .invalid-feedback {
+        color: var(--error-color);
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+        display: none;
+    }
+    
+    .invalid-feedback.d-block {
+        display: block;
+    }
+    
+    .note-editor.is-invalid {
+        border-color: var(--error-color);
+    }
 </style>
 
 @endsection
@@ -255,7 +300,44 @@
                 ['insert', ['link', 'picture']],
                 ['view', ['fullscreen', 'codeview', 'help']]
             ],
-            lang: 'ru-RU'
+            lang: 'ru-RU',
+            dialogsInBody: true,
+            disableDragAndDrop: false,
+            styleTags: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote']
+        });
+
+        // Дополнительные настройки для темной темы
+        $('.note-editor').addClass('dark-theme');
+        
+        // Клиентская валидация формы
+        const form = document.querySelector('.needs-validation');
+        
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                // Проверяем Summernote отдельно
+                const summernoteContent = $('.summernote').summernote('code');
+                if (!summernoteContent || summernoteContent === '<p><br></p>') {
+                    $('.note-editor').addClass('is-invalid');
+                    $('.summernote').next('.invalid-feedback').show();
+                } else {
+                    $('.note-editor').removeClass('is-invalid');
+                    $('.summernote').next('.invalid-feedback').hide();
+                }
+            }
+            
+            form.classList.add('was-validated');
+        }, false);
+        
+        // Убираем класс ошибки при вводе в Summernote
+        $('.summernote').on('summernote.change', function() {
+            const content = $(this).summernote('code');
+            if (content && content !== '<p><br></p>') {
+                $('.note-editor').removeClass('is-invalid');
+                $(this).next('.invalid-feedback').hide();
+            }
         });
     });
     
@@ -274,6 +356,10 @@
                 };
                 
                 reader.readAsDataURL(this.files[0]);
+                
+                // Удаляем класс ошибки, когда пользователь выбирает файл
+                imageInput.classList.remove('is-invalid');
+                imageInput.nextElementSibling.style.display = 'none';
             }
         });
     });

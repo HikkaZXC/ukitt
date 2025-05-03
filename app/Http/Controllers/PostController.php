@@ -39,11 +39,23 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $messages = [
+            'title.required' => 'Поле "Заголовок" обязательно для заполнения',
+            'title.string' => 'Поле "Заголовок" должно быть строкой',
+            'title.max' => 'Длина заголовка не должна превышать 255 символов',
+            'content.required' => 'Поле "Содержание" обязательно для заполнения',
+            'content.string' => 'Поле "Содержание" должно быть текстом',
+            'image.required' => 'Изображение обязательно для загрузки',
+            'image.image' => 'Файл должен быть изображением',
+            'image.mimes' => 'Поддерживаемые форматы изображений: jpeg, png, jpg, gif',
+            'image.max' => 'Размер изображения не должен превышать 2MB',
+        ];
+
         $request->validate([
             'title' => 'required|string|max:255',
             'content' => 'required|string',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        ]);
+        ], $messages);
         
         // Создание новости с временным значением image
         $post = new Post();
@@ -92,11 +104,22 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+        $messages = [
+            'title.required' => 'Поле "Заголовок" обязательно для заполнения',
+            'title.string' => 'Поле "Заголовок" должно быть строкой',
+            'title.max' => 'Длина заголовка не должна превышать 255 символов',
+            'content.required' => 'Поле "Содержание" обязательно для заполнения',
+            'content.string' => 'Поле "Содержание" должно быть текстом',
+            'image.image' => 'Файл должен быть изображением',
+            'image.mimes' => 'Поддерживаемые форматы изображений: jpeg, png, jpg, gif',
+            'image.max' => 'Размер изображения не должен превышать 2MB',
+        ];
+
         $request->validate([
             'title' => 'required|string|max:255',
             'content' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        ]);
+        ], $messages);
         
         $post->title = $request->title;
         $post->content = $request->content;
