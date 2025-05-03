@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Post;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -41,5 +42,15 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('thmmrg1124'),
             'role' => 'teacher',
         ]);
+
+        User::create([
+            'surname' => 'Organ',
+            'name' => 'Organ',
+            'patronymic' => 'Organ',
+            'email' => 'organ@example.com',
+            'password' => Hash::make('thmmrg1124'),
+            'role' => 'organ',
+        ]);
+
     }
 }

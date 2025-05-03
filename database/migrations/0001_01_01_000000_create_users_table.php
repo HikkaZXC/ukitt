@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('patronymic');
             $table->string('email')->unique();
             $table->string('password');
-            $table->enum('role', ['admin', 'student', 'teacher']);
+            $table->enum('role', ['admin', 'student', 'teacher', 'organ']);
             $table->rememberToken();
             $table->timestamps();
         });
