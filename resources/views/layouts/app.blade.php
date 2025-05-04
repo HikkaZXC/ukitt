@@ -36,6 +36,13 @@
                             Управление новостями
                         </a>
                     @endif
+                    
+                    @if(auth()->user()->role === 'admin' || auth()->user()->role === 'manager')
+                        <a href="{{ route('organ.index') }}" class="nav-link {{ request()->is('admin/organizations*') ? 'active' : '' }}">
+                            <i class="fas fa-building"></i>
+                            Управление организациями
+                        </a>
+                    @endif
                 @endauth
             </nav>
             
